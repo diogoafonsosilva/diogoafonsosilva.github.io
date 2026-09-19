@@ -46,6 +46,8 @@ npx serve .
 - 2026-08-11 — Link do EsDomusTech mudado de `https://esdomustech.lovable.app/` para `https://esdomustech.vercel.app/` (index.html + projects.html).
 - 2026-08-29 — SneakerStreet e McLaren removidos de `projects.html` (só existiam ali, não em index.html). Grelha reordenada para EsDomusTech → TAIPAM → Fiat Flow Tracker → EVPM → L'Essence Atelier. `visibleCount` atualizado de 7 para 5. Pastas `SneakerStore/` e `McLarenSite/` não apagadas, ficam só sem link no site.
 
+- 2026-09-19 — Projeto "Mopólio Tuga" adicionado (index.html + projects.html) como mais recente. Jogo Monopólio no browser (React 19 + Vite + Three.js, pass-and-play 2–6 jogadores). Deploy dedicado no Vercel (projeto `mopolio-tuga`, equipa `diogoafonsosilva`) a partir de `MeuSite/Projetos/MONOPOLY`; o site só leva cartão + link para `https://mopolio-tuga.vercel.app` (build Vite fica fora deste site estático). Capa em WebP (`assets/img/mopolio-tuga-cover.webp`, primeira capa neste formato). `visibleCount` de 5 para 6. Index passa a ter 5 cartões numa grelha de 2 colunas (último fica sozinho).
+
 ## Não fazer
 
 - Não juntar `home.css` e `projects.css` num só ficheiro — os dois definem `.project-card` de forma incompatível de propósito.
