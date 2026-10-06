@@ -3,380 +3,401 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0e0d0c" />
 
   <title>Diogo Silva | Marketing & Digital</title>
-  <meta name="description" content="Portfólio de Diogo Silva com projetos em SEO, marketing de conteúdo, email marketing, web e comunicação digital." />
+  <meta name="description" content="Diogo Silva, Porto. SEO, marketing de conteúdo e email marketing — e os sites, lojas e apps onde esse marketing acontece." />
+  <link rel="canonical" href="https://diogoafonsosilva.github.io/" />
   <meta property="og:title" content="Diogo Silva | Marketing & Digital" />
-  <meta property="og:description" content="SEO, Marketing de Conteúdo, Email Marketing e projetos digitais." />
+  <meta property="og:description" content="SEO, conteúdo e email marketing — com código por trás." />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_PT" />
   <meta property="og:url" content="https://diogoafonsosilva.github.io/" />
+  <meta property="og:image" content="https://diogoafonsosilva.github.io/assets/img/og-cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="icon" type="image/png" href="assets/img/favicon.png" />
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/home.css" />
 
+  <script>document.documentElement.classList.add("js");</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Diogo Silva",
+    "url": "https://diogoafonsosilva.github.io/",
+    "jobTitle": "Marketing Digital",
+    "address": { "@type": "PostalAddress", "addressLocality": "Porto", "addressCountry": "PT" },
+    "sameAs": [
+      "https://linkedin.com/in/diogoafonsosilva",
+      "https://www.behance.net/diogoafonsosilva"
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <nav id="nav">
+  <a class="skip-link" href="#main">Saltar para o conteúdo</a>
+
+  <nav id="nav" aria-label="Principal">
     <div class="nav-wrap">
-      <a class="nav-logo" href="#hero">Diogo Silva</a>
-      <ul class="nav-links">
+      <a class="nav-logo" href="#hero" aria-label="Diogo Silva — início">Diogo Silva<i>.</i></a>
+      <ul class="nav-links" id="navLinks">
         <li><a href="#projetos">Projetos</a></li>
         <li><a href="#competencias">Competências</a></li>
-        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#experiencia">Percurso</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
       <div class="nav-actions">
-        <a class="nav-cta" href="https://www.behance.net/diogoafonsosilva" target="_blank" rel="noopener">Behance</a>
+        <span class="nav-status mono"><span class="pulse" aria-hidden="true"></span>Disponível para projetos</span>
         <a class="nav-cta" href="mailto:diogoafonsosilva@gmail.com">Contactar</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span>
+        </button>
       </div>
     </div>
   </nav>
 
-  <section class="hero" id="hero">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-copy reveal">
-          <div class="eyebrow">Portfólio digital · Porto, Portugal</div>
-          <h1>
-            Marketing que gera
-            <span>crescimento digital.</span>
-          </h1>
-          <p class="lead">
-            Combino SEO, marketing de conteúdo, email marketing e web para criar experiências digitais mais fortes, mais claras e mais orientadas a resultados.
-          </p>
-          <div class="hero-tags">
-            <span>SEO</span>
-            <span>Marketing de Conteúdo</span>
-            <span>Email Marketing</span>
-            <span>Web</span>
-          </div>
-          <div class="hero-actions">
-            <a class="btn-primary" href="#projetos">
-              Ver projetos
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-            <a class="btn-secondary" href="mailto:diogoafonsosilva@gmail.com">Falar comigo</a>
-          </div>
-          <div class="hero-stats">
-            <div class="stat">
-              <strong>30+</strong>
-              <span>Conteúdos criados para web, blog e social media</span>
-            </div>
-            <div class="stat">
-              <strong>8</strong>
-              <span>Campanhas de email marketing com segmentação e análise</span>
-            </div>
-            <div class="stat">
-              <strong>2.5K+</strong>
-              <span>Crescimento orgânico acumulado em projetos culturais</span>
-            </div>
-          </div>
+  <main id="main">
+
+    <section class="hero" id="hero">
+      <div class="container">
+
+        <div class="hero-meta mono reveal">
+          <span>Portfólio · 2026</span>
+          <span class="hero-meta-mid">Marketing digital &amp; web</span>
+          <span>Porto, PT · <time id="clock">--:--</time></span>
         </div>
 
-        <div class="hero-visual reveal">
-          <div class="mini-card top-right">
-            <div class="mini-label">Especialização</div>
-            <div class="mini-value">SEO + Conteúdo</div>
-            <div class="mini-sub">Foco em crescimento orgânico e clareza de mensagem</div>
-          </div>
-          <div class="mini-card bottom-left">
-            <div class="mini-label">Base de trabalho</div>
-            <div class="mini-value">Web + Dados</div>
-            <div class="mini-sub">Decisão guiada por métricas, estrutura e performance</div>
-          </div>
-          <div class="photo-card">
-            <div class="photo-card-top">
-              <span>Portfolio Preview</span>
-              <div class="dots"><span></span><span></span><span></span></div>
-            </div>
-            <div class="photo-frame">
-              <img src="assets/img/linkedin-foto-nova.png" alt="Diogo Silva" class="hero-photo" />
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1 class="reveal" style="--d:.05s">
+              Marketing digital com <em>código</em> por&nbsp;trás.
+            </h1>
+            <p class="lead reveal" style="--d:.15s">
+              Sou o Diogo. Trabalho SEO, conteúdo e email marketing — e construo os sites, lojas e apps onde esse marketing acontece. Da estratégia ao deploy, sem perder nada pelo caminho.
+            </p>
+            <div class="hero-actions reveal" style="--d:.25s">
+              <a class="btn-primary" href="#projetos">
+                Ver projetos
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a class="btn-secondary" href="https://linkedin.com/in/diogoafonsosilva" target="_blank" rel="noopener">LinkedIn</a>
             </div>
           </div>
+
+          <figure class="hero-portrait reveal" style="--d:.2s">
+            <div class="portrait-frame">
+              <img src="assets/img/linkedin-foto-nova.webp" alt="Retrato de Diogo Silva" width="800" height="800" fetchpriority="high" />
+            </div>
+            <figcaption class="mono">
+              <span>Diogo Silva</span>
+              <span>41.15° N, 8.61° W</span>
+            </figcaption>
+          </figure>
         </div>
+
+        <dl class="hero-stats reveal" style="--d:.3s">
+          <div class="stat">
+            <dt>Conteúdos publicados</dt>
+            <dd data-count="130" data-suffix="+">130+</dd>
+            <p>Web, blog e social para marcas e projetos culturais</p>
+          </div>
+          <div class="stat">
+            <dt>Crescimento orgânico</dt>
+            <dd data-count="2500" data-suffix="+">2.500+</dd>
+            <p>Seguidores conquistados sem paid, em projetos culturais</p>
+          </div>
+          <div class="stat">
+            <dt>Campanhas de email</dt>
+            <dd data-count="8">8</dd>
+            <p>Planeadas, segmentadas e analisadas em GA4</p>
+          </div>
+          <div class="stat">
+            <dt>Projetos online</dt>
+            <dd data-count="6">6</dd>
+            <p>Sites, loja, app e jogo — todos construídos por mim</p>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>SEO</span><span>Marketing de conteúdo</span><span>Email marketing</span><span>Meta Ads</span><span>GA4</span><span>Copywriting</span><span>React</span><span>Next.js</span><span>TypeScript</span><span>Three.js</span><span>Identidade visual</span><span>Geração de leads</span>
+        <span>SEO</span><span>Marketing de conteúdo</span><span>Email marketing</span><span>Meta Ads</span><span>GA4</span><span>Copywriting</span><span>React</span><span>Next.js</span><span>TypeScript</span><span>Three.js</span><span>Identidade visual</span><span>Geração de leads</span>
       </div>
     </div>
-  </section>
 
-  <section id="projetos">
-    <div class="container">
-      <div class="section-head reveal">
-        <div>
-          <p class="section-kicker">Trabalho selecionado</p>
-          <div class="section-title-row">
-            <h2 class="section-title">Projetos em destaque</h2>
-            <a class="section-link" href="projects.html">
-              Ver todos
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="section-no">02</div>
-      </div>
-
-      <div class="projects-grid reveal">
-
-        <!-- EsDomusTech (Lovable) -->
-        <article class="project-card">
-          <img src="assets/img/esdomustech-t3-hero.jpg" alt="Projeto EsDomusTech" class="project-img" />
-          <div class="project-overlay"></div>
-          <div class="project-content">
-            <h3 class="project-name">EsDomusTech</h3>
-            <p class="project-desc">
-              Website institucional para a ESDOMUSTECH, marca de casas modulares tecnológicas. Estrutura, identidade visual e presença digital orientadas a um setor emergente do imobiliário.
-            </p>
-            <div class="project-meta">
-              <span>Imobiliário modular</span>
-              <span>Vite</span>
-              <span>React</span>
-              <span>TypeScript</span>
-            </div>
-            <a class="project-link" href="https://esdomustech.vercel.app/" target="_blank" rel="noopener">
-              Abrir site
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                <path d="M2 13L13 2M13 2H7M13 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-          </div>
-        </article>
-
-        <!-- TAIPAM -->
-        <article class="project-card">
-          <div class="project-logo-thumb">
-            <img src="assets/img/TAIPAM em Palco.jpg" alt="TAIPAM" />
-          </div>
-          <div class="project-overlay"></div>
-          <div class="project-content">
-            <h3 class="project-name">TAIPAM</h3>
-            <p class="project-desc">
-              Projeto web desenvolvido com Lovable. Estrutura digital com foco em presença online e experiência do utilizador.
-            </p>
-            <div class="project-meta">
-              <span>Associação</span>
-              <span>Vite</span>
-              <span>React</span>
-              <span>TypeScript</span>
-            </div>
-            <a class="project-link" href="https://taipam.lovable.app" target="_blank" rel="noopener">
-              Abrir site
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                <path d="M2 13L13 2M13 2H7M13 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-          </div>
-        </article>
-
-        <!-- Fiat Flow Tracker -->
-        <article class="project-card">
-          <img src="assets/img/fiat-flow-tracker-cover.jpg" alt="Fiat Flow Tracker" class="project-img" />
-          <div class="project-overlay"></div>
-          <div class="project-content">
-            <h3 class="project-name">Fiat Flow Tracker</h3>
-            <p class="project-desc">
-              Aplicação fullstack de gestão financeira pessoal — dashboard, movimentos, orçamentos, património e metas. Demo pública editável em tempo real.
-            </p>
-            <div class="project-meta">
-              <span>Gestão financeira</span>
-              <span>Next.js</span>
-              <span>TypeScript</span>
-              <span>Prisma</span>
-            </div>
-            <a class="project-link" href="https://fiat-flow-demo.vercel.app" target="_blank" rel="noopener">
-              Abrir demo
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                <path d="M2 13L13 2M13 2H7M13 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-          </div>
-        </article>
-
-        <!-- Monopólio Tuga -->
-        <article class="project-card">
-          <img src="assets/img/monopolio-tuga-cover.webp" alt="Monopólio Tuga" class="project-img" />
-          <div class="project-overlay"></div>
-          <div class="project-content">
-            <h3 class="project-name">Monopólio Tuga</h3>
-            <p class="project-desc">
-              Monopólio à portuguesa para jogar no browser — tabuleiro 3D com as cidades de Portugal, personagens da cena musical urbana, dados e turnos para 2 a 6 jogadores.
-            </p>
-            <div class="project-meta">
-              <span>Jogo</span>
-              <span>React</span>
-              <span>Three.js</span>
-              <span>Vite</span>
-            </div>
-            <a class="project-link" href="https://mopolio-tuga.vercel.app" target="_blank" rel="noopener">
-              Jogar agora
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                <path d="M2 13L13 2M13 2H7M13 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-          </div>
-        </article>
-
-        <!-- L'Essence Atelier -->
-        <article class="project-card">
-          <img src="assets/img/lessence-atelier-cover.jpg" alt="L'Essence Atelier" class="project-img" />
-          <div class="project-overlay"></div>
-          <div class="project-content">
-            <h3 class="project-name">L'Essence Atelier</h3>
-            <p class="project-desc">
-              Loja de perfumaria com funil de compra completo e admin ao estilo Shopify — catálogo, checkout, encomendas, descontos e analytics de eventos GA4 em tempo real.
-            </p>
-            <div class="project-meta">
-              <span>E-commerce</span>
-              <span>React</span>
-              <span>TypeScript</span>
-              <span>Tailwind</span>
-            </div>
-            <a class="project-link" href="https://lessence-atelier.vercel.app" target="_blank" rel="noopener">
-              Abrir site
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                <path d="M2 13L13 2M13 2H7M13 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-          </div>
-        </article>
-
-      </div>
-
-    </div>
-  </section>
-
-  <section id="competencias">
-    <div class="container">
-      <div class="section-head reveal">
-        <div>
-          <p class="section-kicker">Competências</p>
-          <h2 class="section-title">Áreas em que trabalho</h2>
-        </div>
-        <div class="section-no">03</div>
-      </div>
-      <div class="skills-grid reveal">
-        <article class="skill-card">
-          <div class="skill-no">01</div>
-          <h3>SEO & Conteúdo</h3>
-          <p>Criação e otimização de conteúdos para website, blog e canais digitais, com foco em visibilidade orgânica, proposta de valor e captação de leads.</p>
-          <div class="skill-tags">
-            <span>SEO On Page</span><span>Copywriting</span><span>GA4</span><span>WordPress</span>
-          </div>
-        </article>
-        <article class="skill-card">
-          <div class="skill-no">02</div>
-          <h3>Email Marketing</h3>
-          <p>Planeamento, criação, segmentação e análise de campanhas alinhadas com objetivos comerciais e com leitura de métricas orientada à melhoria contínua.</p>
-          <div class="skill-tags">
-            <span>Segmentação</span><span>Otimização</span><span>Automação</span><span>KPIs</span>
-          </div>
-        </article>
-        <article class="skill-card">
-          <div class="skill-no">03</div>
-          <h3>Web & Design</h3>
-          <p>Desenvolvimento de páginas e interfaces com atenção à estrutura, experiência do utilizador, identidade visual e coerência comunicacional.</p>
-          <div class="skill-tags">
-            <span>HTML / CSS</span><span>Illustrator</span><span>Photoshop</span><span>Canva</span>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="experiencia">
-    <div class="container">
-      <div class="section-head reveal">
-        <div>
-          <p class="section-kicker">Percurso</p>
-          <h2 class="section-title">Experiência relevante</h2>
-        </div>
-        <div class="section-no">04</div>
-      </div>
-      <div class="timeline reveal">
-        <article class="timeline-item">
+    <section id="projetos" aria-labelledby="projetos-title">
+      <div class="container">
+        <div class="section-head reveal">
           <div>
-            <div class="timeline-period">Jun 2026 – Jul 2026</div>
-            <div class="timeline-org">EsDomusTech · Vila Nova da Telha</div>
+            <p class="section-kicker"><b>01</b> Trabalho selecionado</p>
+            <h2 class="section-title" id="projetos-title">Projetos <em>em destaque</em></h2>
           </div>
-          <div class="timeline-content">
-            <h3>Especialista em MKT e Geração de Leads</h3>
-            <p>Criação de um novo website orientado para angariação de leads e posicionamento no mercado de construção modular. Campanhas de Meta Ads com foco no aumento de leads qualificadas e melhor ROAS. Captação e criação de conteúdos para reforçar a autoridade da marca no setor.</p>
-            <div class="timeline-pills">
-              <span>Website</span><span>Meta Ads</span><span>Geração de leads</span><span>ROAS</span>
-            </div>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <div>
-            <div class="timeline-period">Jun 2024 – Mar 2025</div>
-            <div class="timeline-org">IPBRICK · Vila Nova de Gaia</div>
-          </div>
-          <div class="timeline-content">
-            <h3>Estagiário Especialista em Marketing</h3>
-            <p>Criação e otimização de mais de 30 conteúdos para website, blog e redes sociais. Trabalho em SEO, landing pages, email marketing e análise de KPIs em GA4 com foco em geração de leads.</p>
-            <div class="timeline-pills">
-              <span>+30 conteúdos</span><span>8 campanhas email</span><span>SEO</span><span>GA4</span>
-            </div>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <div>
-            <div class="timeline-period">Jun 2023 – Presente</div>
-            <div class="timeline-org">Projetos culturais · Porto</div>
-          </div>
-          <div class="timeline-content">
-            <h3>Freelancer de Marketing</h3>
-            <p>Estratégia de conteúdo, identidade visual e gestão digital para projetos culturais. Produção de mais de 130 conteúdos no Meta Business Suite, com crescimento orgânico acumulado superior a 2.500 seguidores.</p>
-            <div class="timeline-pills">
-              <span>+130 conteúdos</span><span>+2.500 seguidores</span><span>Meta Business Suite</span>
-            </div>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <div>
-            <div class="timeline-period">2021 – 2025</div>
-            <div class="timeline-org">Web Summit & TEDxPorto</div>
-          </div>
-          <div class="timeline-content">
-            <h3>Voluntário em eventos de grande escala</h3>
-            <p>Integração em equipas operacionais em eventos tecnológicos e culturais com milhares de participantes, apoio logístico, receção e colaboração com equipas multidisciplinares em contexto dinâmico.</p>
-            <div class="timeline-pills">
-              <span>Web Summit ×4</span><span>TEDxPorto ×3</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+          <a class="section-link" href="projects.html">
+            Arquivo completo
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
 
-  <section id="contacto">
-    <div class="container">
-      <div class="contact-box reveal">
-        <h2>Vamos trabalhar juntos?</h2>
-        <p>Estou disponível para oportunidades em marketing digital, conteúdo, SEO, email marketing e projetos web com foco em resultados e comunicação clara.</p>
-        <div class="contact-actions">
-          <a class="btn-primary" href="mailto:diogoafonsosilva@gmail.com">Enviar email</a>
-          <a class="btn-secondary" href="https://linkedin.com/in/diogoafonsosilva" target="_blank" rel="noopener">Ver LinkedIn</a>
-          <a class="btn-secondary" href="https://www.behance.net/diogoafonsosilva" target="_blank" rel="noopener">Ver Behance</a>
+        <div class="projects-grid">
+
+          <!-- EsDomusTech (Lovable) -->
+          <article class="project-card span-7 reveal">
+            <img src="assets/img/esdomustech-t3-hero.webp" alt="Casa modular EsDomusTech" class="project-img" loading="lazy" width="1086" height="1448" />
+            <div class="project-overlay"></div>
+            <span class="project-index mono">01</span>
+            <span class="project-arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 15 15" fill="none"><path d="M3 12L12 3M12 3H6M12 3V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="project-content">
+              <p class="project-meta mono">Imobiliário modular <span>React · TypeScript · Vite</span></p>
+              <h3 class="project-name">
+                <a class="project-link" href="https://esdomustech.vercel.app/" target="_blank" rel="noopener">EsDomusTech</a>
+              </h3>
+              <p class="project-desc">Website institucional para uma marca de casas modulares tecnológicas — estrutura, identidade e presença digital para um setor emergente do imobiliário.</p>
+            </div>
+          </article>
+
+          <!-- TAIPAM -->
+          <article class="project-card span-5 reveal" style="--d:.08s">
+            <img src="assets/img/taipam-em-palco.webp" alt="TAIPAM em palco" class="project-img" loading="lazy" width="1000" height="1333" />
+            <div class="project-overlay"></div>
+            <span class="project-index mono">02</span>
+            <span class="project-arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 15 15" fill="none"><path d="M3 12L12 3M12 3H6M12 3V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="project-content">
+              <p class="project-meta mono">Tuna académica <span>React · TypeScript</span></p>
+              <h3 class="project-name">
+                <a class="project-link" href="https://taipam.lovable.app" target="_blank" rel="noopener">TAIPAM</a>
+              </h3>
+              <p class="project-desc">Site oficial da Tuna Académica do IPAM, ativa desde 1998 — mais de 25 anos de música e tradição académica contados para quem a descobre pela primeira vez.</p>
+            </div>
+          </article>
+
+          <!-- Fiat Flow Tracker -->
+          <article class="project-card span-5 reveal">
+            <img src="assets/img/fiat-flow-tracker-cover.webp" alt="Dashboard do Fiat Flow Tracker" class="project-img" loading="lazy" width="1600" height="800" />
+            <div class="project-overlay"></div>
+            <span class="project-index mono">03</span>
+            <span class="project-arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 15 15" fill="none"><path d="M3 12L12 3M12 3H6M12 3V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="project-content">
+              <p class="project-meta mono">App fullstack <span>Next.js · Prisma</span></p>
+              <h3 class="project-name">
+                <a class="project-link" href="https://fiat-flow-demo.vercel.app" target="_blank" rel="noopener">Fiat Flow Tracker</a>
+              </h3>
+              <p class="project-desc">Gestão financeira pessoal — dashboard, movimentos, orçamentos, património e metas. Demo pública editável em tempo real.</p>
+            </div>
+          </article>
+
+          <!-- Monopólio Tuga -->
+          <article class="project-card span-7 reveal" style="--d:.08s">
+            <img src="assets/img/monopolio-tuga-cover.webp" alt="Tabuleiro 3D do Monopólio Tuga" class="project-img" loading="lazy" />
+            <div class="project-overlay"></div>
+            <span class="project-index mono">04</span>
+            <span class="project-arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 15 15" fill="none"><path d="M3 12L12 3M12 3H6M12 3V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="project-content">
+              <p class="project-meta mono">Jogo no browser <span>React · Three.js</span></p>
+              <h3 class="project-name">
+                <a class="project-link" href="https://mopolio-tuga.vercel.app" target="_blank" rel="noopener">Monopólio Tuga</a>
+              </h3>
+              <p class="project-desc">Monopólio à portuguesa — tabuleiro 3D com as cidades de Portugal, personagens da cena musical urbana e turnos para 2 a 6 jogadores.</p>
+            </div>
+          </article>
+
+          <!-- L'Essence Atelier -->
+          <article class="project-card span-12 is-wide reveal">
+            <img src="assets/img/lessence-atelier-cover.jpg" alt="Loja online L'Essence Atelier" class="project-img" loading="lazy" />
+            <div class="project-overlay"></div>
+            <span class="project-index mono">05</span>
+            <span class="project-arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 15 15" fill="none"><path d="M3 12L12 3M12 3H6M12 3V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="project-content">
+              <p class="project-meta mono">E-commerce <span>React · Tailwind · GA4</span></p>
+              <h3 class="project-name">
+                <a class="project-link" href="https://lessence-atelier.vercel.app" target="_blank" rel="noopener">L'Essence Atelier</a>
+              </h3>
+              <p class="project-desc">Perfumaria com funil de compra completo e admin ao estilo Shopify — catálogo, checkout, encomendas, descontos e eventos GA4 ao vivo.</p>
+            </div>
+          </article>
+
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section id="competencias" aria-labelledby="competencias-title">
+      <div class="container split">
+        <div class="split-head reveal">
+          <p class="section-kicker"><b>02</b> Competências</p>
+          <h2 class="section-title" id="competencias-title">O que <em>faço</em></h2>
+          <p class="split-note">Três áreas que se alimentam umas às outras: o conteúdo traz pessoas, o email mantém-nas, a web converte.</p>
+        </div>
+
+        <ol class="skill-list">
+          <li class="skill-row reveal">
+            <span class="skill-no mono">01</span>
+            <div>
+              <h3>SEO &amp; conteúdo</h3>
+              <p>Conteúdos para website, blog e canais digitais com foco em visibilidade orgânica, proposta de valor clara e captação de leads.</p>
+              <ul class="skill-tags mono"><li>SEO on-page</li><li>Copywriting</li><li>GA4</li><li>WordPress</li></ul>
+            </div>
+          </li>
+          <li class="skill-row reveal">
+            <span class="skill-no mono">02</span>
+            <div>
+              <h3>Email marketing</h3>
+              <p>Planeamento, criação, segmentação e análise de campanhas alinhadas com objetivos comerciais — cada envio informa o seguinte.</p>
+              <ul class="skill-tags mono"><li>Segmentação</li><li>Automação</li><li>Otimização</li><li>KPIs</li></ul>
+            </div>
+          </li>
+          <li class="skill-row reveal">
+            <span class="skill-no mono">03</span>
+            <div>
+              <h3>Web &amp; design</h3>
+              <p>Sites, lojas e apps construídos de raiz, com atenção à estrutura, à experiência do utilizador e à coerência da marca.</p>
+              <ul class="skill-tags mono"><li>React</li><li>Next.js</li><li>Illustrator</li><li>Photoshop</li></ul>
+            </div>
+          </li>
+          <li class="skill-row reveal">
+            <span class="skill-no mono">04</span>
+            <div>
+              <h3>Paid &amp; leads</h3>
+              <p>Campanhas Meta Ads orientadas a leads qualificadas, com landing pages pensadas para converter e leitura de ROAS semana a semana.</p>
+              <ul class="skill-tags mono"><li>Meta Ads</li><li>Landing pages</li><li>ROAS</li><li>Leads qualificadas</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="experiencia" aria-labelledby="experiencia-title">
+      <div class="container split">
+        <div class="split-head reveal">
+          <p class="section-kicker"><b>03</b> Percurso</p>
+          <h2 class="section-title" id="experiencia-title">Onde <em>estive</em></h2>
+          <a class="section-link" href="https://linkedin.com/in/diogoafonsosilva" target="_blank" rel="noopener">
+            Perfil completo no LinkedIn
+            <svg width="14" height="14" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M3 12L12 3M12 3H6M12 3V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-when mono">
+              <span>Jun — Jul 2026</span>
+              <span>Vila Nova da Telha</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Especialista em MKT e geração de leads <span>EsDomusTech</span></h3>
+              <p>Novo website orientado para angariação de leads e posicionamento no mercado da construção modular. Campanhas Meta Ads focadas em leads qualificadas e melhor ROAS. Captação e criação de conteúdos para reforçar a autoridade da marca.</p>
+              <ul class="timeline-pills mono"><li>Website</li><li>Meta Ads</li><li>Geração de leads</li><li>ROAS</li></ul>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-when mono">
+              <span>Jun 2024 — Mar 2025</span>
+              <span>Vila Nova de Gaia</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Estagiário especialista em marketing <span>IPBRICK</span></h3>
+              <p>Criação e otimização de mais de 30 conteúdos para website, blog e redes sociais. SEO, landing pages, email marketing e análise de KPIs em GA4 com foco em geração de leads.</p>
+              <ul class="timeline-pills mono"><li>+30 conteúdos</li><li>8 campanhas email</li><li>SEO</li><li>GA4</li></ul>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-when mono">
+              <span>Jun 2023 — hoje</span>
+              <span>Porto</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Freelancer de marketing <span>Projetos culturais</span></h3>
+              <p>Estratégia de conteúdo, identidade visual e gestão digital para projetos culturais. Mais de 130 conteúdos no Meta Business Suite e crescimento orgânico acumulado acima de 2.500 seguidores.</p>
+              <ul class="timeline-pills mono"><li>+130 conteúdos</li><li>+2.500 seguidores</li><li>Meta Business Suite</li></ul>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-when mono">
+              <span>2021 — 2025</span>
+              <span>Lisboa &amp; Porto</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Voluntário em eventos de grande escala <span>Web Summit &amp; TEDxPorto</span></h3>
+              <p>Equipas operacionais em eventos tecnológicos e culturais com milhares de participantes — logística, receção e colaboração com equipas multidisciplinares.</p>
+              <ul class="timeline-pills mono"><li>Web Summit ×4</li><li>TEDxPorto ×3</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact" aria-labelledby="contacto-title">
+      <div class="container">
+        <p class="section-kicker reveal"><b>04</b> Contacto</p>
+        <h2 class="contact-title reveal" id="contacto-title">Vamos <em>falar?</em></h2>
+
+        <div class="contact-grid">
+          <p class="contact-lead reveal">Disponível para oportunidades em marketing digital, conteúdo, SEO, email marketing e projetos web.</p>
+
+          <div class="contact-email reveal">
+            <a href="mailto:diogoafonsosilva@gmail.com" class="email-link">diogoafonsosilva@gmail.com</a>
+            <button class="copy-btn mono" type="button" data-copy="diogoafonsosilva@gmail.com" aria-live="polite">Copiar</button>
+          </div>
+
+          <ul class="contact-links reveal">
+            <li>
+              <a href="https://linkedin.com/in/diogoafonsosilva" target="_blank" rel="noopener">
+                <span>LinkedIn</span>
+                <svg width="16" height="16" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M3 12L12 3M12 3H6M12 3V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.behance.net/diogoafonsosilva" target="_blank" rel="noopener">
+                <span>Behance</span>
+                <svg width="16" height="16" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M3 12L12 3M12 3H6M12 3V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="projects.html">
+                <span>Todos os projetos</span>
+                <svg width="16" height="16" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <footer>
     <div class="footer-wrap">
-      <span>© 2026 Diogo Silva</span>
-      <span>Porto, Portugal</span>
+      <span>© 2026 Diogo Silva — feito à mão em HTML, CSS e JS</span>
+      <div class="footer-group">
+        <span>Porto, Portugal</span>
+        <a href="#hero">Voltar ao topo ↑</a>
+      </div>
     </div>
   </footer>
 

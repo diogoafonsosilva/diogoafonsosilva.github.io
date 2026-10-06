@@ -3,27 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0e0d0c" />
   <title>Projetos — Diogo Silva</title>
-  <meta name="description" content="Todos os projetos de Diogo Silva — web design, marketing, experiências digitais e mais." />
+  <meta name="description" content="Todos os projetos de Diogo Silva — sites, lojas online, apps e jogos construídos de raiz." />
+  <link rel="canonical" href="https://diogoafonsosilva.github.io/projects.html" />
+  <meta property="og:title" content="Projetos — Diogo Silva" />
+  <meta property="og:description" content="Sites, lojas online, apps e jogos construídos de raiz." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_PT" />
+  <meta property="og:url" content="https://diogoafonsosilva.github.io/projects.html" />
+  <meta property="og:image" content="https://diogoafonsosilva.github.io/assets/img/og-cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="icon" type="image/png" href="assets/img/favicon.png" />
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/projects.css" />
 
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
 
-  <nav id="nav">
+  <a class="skip-link" href="#main">Saltar para o conteúdo</a>
+
+  <nav id="nav" aria-label="Principal">
     <div class="nav-wrap">
-      <a href="index.html" class="nav-logo">Diogo Silva</a>
+      <a href="index.html" class="nav-logo" aria-label="Diogo Silva — início">Diogo Silva<i>.</i></a>
       <a href="index.html" class="nav-back">
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
           <path d="M11 7H3M6 3.5L3 7l3 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         Voltar ao portfólio
@@ -31,145 +43,140 @@
     </div>
   </nav>
 
-  <main>
+  <main id="main">
     <div class="container">
 
-      <header class="page-header reveal">
-        <div class="page-kicker">Arquivo completo</div>
-        <h1>Todos os<br><span>projetos</span></h1>
-        <p>Web design, landing pages, experiências de marca e mais. Atualizado à medida que vou construindo.</p>
+      <header class="page-header">
+        <p class="section-kicker reveal"><b>/</b> Arquivo completo</p>
+        <h1 class="reveal" style="--d:.05s">Todos os <em>projetos</em></h1>
+        <div class="page-header-foot reveal" style="--d:.12s">
+          <p>Sites, lojas, apps e jogos — todos construídos de raiz e online. A lista cresce à medida que vou construindo.</p>
+          <p class="count-text mono" aria-live="polite"><strong id="visibleCount">6</strong> <span id="countLabel">projetos</span></p>
+        </div>
       </header>
 
-      <div class="filter-bar reveal" id="filterBar">
-        <button class="filter-btn active" data-filter="all">Todos</button>
-        <button class="filter-btn" data-filter="web">Web Design</button>
-        <button class="filter-btn" data-filter="brand">Marca & Brand</button>
-        <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
-        <button class="filter-btn" data-filter="lovable">Lovable</button>
-      </div>
-
-      <div class="count-bar reveal">
-        <p class="count-text"><strong id="visibleCount">6</strong> projetos</p>
+      <div class="filter-bar reveal" id="filterBar" role="group" aria-label="Filtrar projetos por categoria">
+        <button class="filter-btn active" data-filter="all" aria-pressed="true">Todos <span class="mono"></span></button>
+        <button class="filter-btn" data-filter="web" aria-pressed="false">Web <span class="mono"></span></button>
+        <button class="filter-btn" data-filter="brand" aria-pressed="false">Marca <span class="mono"></span></button>
+        <button class="filter-btn" data-filter="ecommerce" aria-pressed="false">E-commerce <span class="mono"></span></button>
+        <button class="filter-btn" data-filter="lovable" aria-pressed="false">Lovable <span class="mono"></span></button>
       </div>
 
       <div class="projects-grid" id="projectsGrid">
 
         <!-- EsDomusTech (Lovable) -->
         <article class="project-card reveal" data-category="web brand lovable">
-          <div class="project-badge badge-live">Live</div>
           <div class="project-logo-thumb framed">
-            <img src="assets/img/domustech-logo.jpg" alt="Logo ESDOMUSTECH" />
+            <img src="assets/img/domustech-logo.webp" alt="Logo ESDOMUSTECH" loading="lazy" width="800" height="800" />
           </div>
           <div class="project-body">
-            <h3 class="project-name">EsDomusTech</h3>
-            <p class="project-desc">Website institucional para a ESDOMUSTECH, marca de casas modulares tecnológicas. Estrutura, identidade visual e presença digital orientadas a um setor emergente do imobiliário.</p>
-            <div class="project-tags">
-              <span>Imobiliário modular</span><span>Vite</span><span>React</span><span>TypeScript</span>
+            <div class="project-head mono">
+              <span class="project-no">01</span>
+              <span>Imobiliário modular</span>
+              <span class="project-badge badge-live">Live</span>
             </div>
+            <h2 class="project-name">EsDomusTech</h2>
+            <p class="project-desc">Website institucional para a ESDOMUSTECH, marca de casas modulares tecnológicas. Estrutura, identidade visual e presença digital orientadas a um setor emergente do imobiliário.</p>
+            <ul class="project-tags mono"><li>Vite</li><li>React</li><li>TypeScript</li></ul>
             <a class="project-link" href="https://esdomustech.vercel.app/" target="_blank" rel="noopener">
               Abrir site
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
           </div>
         </article>
 
         <!-- TAIPAM -->
-        <article class="project-card reveal" data-category="web lovable">
-          <div class="project-badge badge-live">Live</div>
-          <div class="project-logo-thumb">
-            <img src="assets/img/Logo TAIPAM.png" alt="Logo TAIPAM" />
-          </div>
+        <article class="project-card reveal" data-category="web lovable" style="--d:.06s">
+          <img src="assets/img/taipam-em-palco.webp" alt="TAIPAM — Tuna Académica do IPAM" class="project-thumb" loading="lazy" width="1000" height="1333" />
           <div class="project-body">
-            <h3 class="project-name">TAIPAM</h3>
-            <p class="project-desc">Projeto web desenvolvido com Lovable. Estrutura digital com foco em presença online e experiência do utilizador.</p>
-            <div class="project-tags">
-              <span>Associação</span><span>Vite</span><span>React</span><span>TypeScript</span>
+            <div class="project-head mono">
+              <span class="project-no">02</span>
+              <span>Tuna académica</span>
+              <span class="project-badge badge-live">Live</span>
             </div>
+            <h2 class="project-name">TAIPAM</h2>
+            <p class="project-desc">Site oficial da Tuna Académica do IPAM, em Matosinhos, ativa desde 1998. Mais de 25 anos de música e tradição académica numa presença online pensada para quem a descobre pela primeira vez.</p>
+            <ul class="project-tags mono"><li>Vite</li><li>React</li><li>TypeScript</li></ul>
             <a class="project-link" href="https://taipam.lovable.app" target="_blank" rel="noopener">
               Abrir site
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
           </div>
         </article>
 
         <!-- Fiat Flow Tracker -->
         <article class="project-card reveal" data-category="web">
-          <div class="project-badge badge-live">Live</div>
-          <img src="assets/img/fiat-flow-tracker-cover.jpg" alt="Fiat Flow Tracker" class="project-thumb" />
+          <img src="assets/img/fiat-flow-tracker-cover.webp" alt="Fiat Flow Tracker" class="project-thumb" loading="lazy" width="1600" height="800" />
           <div class="project-body">
-            <h3 class="project-name">Fiat Flow Tracker</h3>
-            <p class="project-desc">Aplicação fullstack de gestão financeira pessoal — dashboard, movimentos, orçamentos, património e metas. Demo pública com dataset fictício, editável em tempo real. Next.js (App Router) + TypeScript de ponta a ponta, Prisma sobre SQLite.</p>
-            <div class="project-tags">
-              <span>Gestão financeira</span><span>Next.js</span><span>TypeScript</span><span>Prisma</span>
+            <div class="project-head mono">
+              <span class="project-no">03</span>
+              <span>App fullstack</span>
+              <span class="project-badge badge-live">Live</span>
             </div>
+            <h2 class="project-name">Fiat Flow Tracker</h2>
+            <p class="project-desc">Aplicação fullstack de gestão financeira pessoal — dashboard, movimentos, orçamentos, património e metas. Demo pública com dataset fictício, editável em tempo real. Next.js (App Router) + TypeScript de ponta a ponta, Prisma sobre SQLite.</p>
+            <ul class="project-tags mono"><li>Next.js</li><li>TypeScript</li><li>Prisma</li></ul>
             <a class="project-link" href="https://fiat-flow-demo.vercel.app" target="_blank" rel="noopener">
               Abrir demo
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
           </div>
         </article>
 
         <!-- Monopólio Tuga -->
-        <article class="project-card reveal" data-category="web">
-          <div class="project-badge badge-live">Live</div>
-          <img src="assets/img/monopolio-tuga-cover.webp" alt="Monopólio Tuga" class="project-thumb" />
+        <article class="project-card reveal" data-category="web" style="--d:.06s">
+          <img src="assets/img/monopolio-tuga-cover.webp" alt="Monopólio Tuga" class="project-thumb" loading="lazy" />
           <div class="project-body">
-            <h3 class="project-name">Monopólio Tuga</h3>
-            <p class="project-desc">Monopólio à portuguesa para jogar no browser — tabuleiro 3D com as cidades de Portugal, personagens fictícias da cena musical urbana (trap, kuduro, fado, pimba), cartas de Sorte e Cofre, prisão e falência. Pass-and-play para 2 a 6 jogadores.</p>
-            <div class="project-tags">
-              <span>Jogo</span><span>React</span><span>Three.js</span><span>Vite</span>
+            <div class="project-head mono">
+              <span class="project-no">04</span>
+              <span>Jogo no browser</span>
+              <span class="project-badge badge-live">Live</span>
             </div>
+            <h2 class="project-name">Monopólio Tuga</h2>
+            <p class="project-desc">Monopólio à portuguesa para jogar no browser — tabuleiro 3D com as cidades de Portugal, personagens fictícias da cena musical urbana (trap, kuduro, fado, pimba), cartas de Sorte e Cofre, prisão e falência. Pass-and-play para 2 a 6 jogadores.</p>
+            <ul class="project-tags mono"><li>React</li><li>Three.js</li><li>Vite</li></ul>
             <a class="project-link" href="https://mopolio-tuga.vercel.app" target="_blank" rel="noopener">
               Jogar agora
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
           </div>
         </article>
 
         <!-- EVPM -->
         <article class="project-card reveal" data-category="web lovable">
-          <div class="project-badge badge-live">Live</div>
-          <div class="project-logo-thumb">
-            <img src="assets/img/Logo EVPM.png" alt="Logo EVPM" />
-          </div>
+          <img src="assets/img/evpm-em-palco.webp" alt="EVPM em palco" class="project-thumb" loading="lazy" width="1200" height="800" />
           <div class="project-body">
-            <h3 class="project-name">EVPM</h3>
-            <p class="project-desc">Projeto web desenvolvido com Lovable. Interface moderna com identidade visual própria e estrutura focada em comunicação clara.</p>
-            <div class="project-tags">
-              <span>Associação</span><span>Vite</span><span>React</span><span>TypeScript</span>
+            <div class="project-head mono">
+              <span class="project-no">05</span>
+              <span>Associação</span>
+              <span class="project-badge badge-live">Live</span>
             </div>
+            <h2 class="project-name">EVPM</h2>
+            <p class="project-desc">Projeto web desenvolvido com Lovable. Interface moderna com identidade visual própria e estrutura focada em comunicação clara.</p>
+            <ul class="project-tags mono"><li>Vite</li><li>React</li><li>TypeScript</li></ul>
             <a class="project-link" href="https://evpm.vercel.app" target="_blank" rel="noopener">
               Abrir site
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
           </div>
         </article>
 
         <!-- L'Essence Atelier -->
-        <article class="project-card reveal" data-category="web ecommerce lovable">
-          <div class="project-badge badge-live">Live</div>
-          <img src="assets/img/lessence-atelier-cover.jpg" alt="L'Essence Atelier" class="project-thumb" />
+        <article class="project-card reveal" data-category="web ecommerce lovable" style="--d:.06s">
+          <img src="assets/img/lessence-atelier-cover.jpg" alt="L'Essence Atelier" class="project-thumb" loading="lazy" />
           <div class="project-body">
-            <h3 class="project-name">L'Essence Atelier</h3>
-            <p class="project-desc">Loja de perfumaria fictícia com funil de compra completo e admin ao estilo Shopify — catálogo com variantes e metafields, checkout em 3 passos, gestão de encomendas e descontos, painel de eventos GA4 ao vivo.</p>
-            <div class="project-tags">
-              <span>E-commerce</span><span>React</span><span>TypeScript</span><span>Tailwind CSS</span>
+            <div class="project-head mono">
+              <span class="project-no">06</span>
+              <span>E-commerce</span>
+              <span class="project-badge badge-live">Live</span>
             </div>
+            <h2 class="project-name">L'Essence Atelier</h2>
+            <p class="project-desc">Loja de perfumaria fictícia com funil de compra completo e admin ao estilo Shopify — catálogo com variantes e metafields, checkout em 3 passos, gestão de encomendas e descontos, painel de eventos GA4 ao vivo.</p>
+            <ul class="project-tags mono"><li>React</li><li>TypeScript</li><li>Tailwind CSS</li></ul>
             <a class="project-link" href="https://lessence-atelier.vercel.app" target="_blank" rel="noopener">
               Abrir demo
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
           </div>
         </article>
@@ -179,26 +186,36 @@
              data-category: "web" | "brand" | "ecommerce" | "lovable"
              badge-live = online | badge-local = ficheiro local
              Para projetos com foto: usar <img class="project-thumb">
-             Para projetos Lovable: usar <div class="project-logo-thumb"><img></div>
+             Para logos com fundo próprio: usar <div class="project-logo-thumb framed"><img></div>
+             Atualizar .project-no (01, 02...) — a contagem dos filtros é automática.
         ═══════════════════════════════════ -->
 
       </div>
 
-      <div class="empty-state" id="emptyState">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-          <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M14 20h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-        <span>Sem projetos nesta categoria ainda.</span>
+      <div class="empty-state" id="emptyState" hidden>
+        <p class="empty-title">Nada aqui — <em>ainda.</em></p>
+        <p>Ainda não há projetos nesta categoria.</p>
+        <button class="btn-secondary" type="button" id="resetFilter">Ver todos os projetos</button>
       </div>
+
+      <aside class="cta-strip reveal">
+        <p>Tens um projeto em mente?</p>
+        <a class="btn-primary" href="mailto:diogoafonsosilva@gmail.com">
+          Falar comigo
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </aside>
 
     </div>
   </main>
 
   <footer>
     <div class="footer-wrap">
-      <span>© 2026 Diogo Silva</span>
-      <span>Porto, Portugal</span>
+      <span>© 2026 Diogo Silva — feito à mão em HTML, CSS e JS</span>
+      <div class="footer-group">
+        <span>Porto, Portugal</span>
+        <a href="index.html">Voltar ao portfólio</a>
+      </div>
     </div>
   </footer>
 
