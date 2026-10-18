@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0e0d0c" />
+  <title>Fiat Flow Tracker — App fullstack | Diogo Silva</title>
+  <meta name="description" content="Aplicação de gestão financeira pessoal — movimentos, orçamentos, património e metas. Nasceu como ferramenta para uso próprio; a demo pública corre com dados fictícios e pode ser editada à vontade." />
+  <meta name="robots" content="index, follow, noai, noimageai" />
+  <meta name="tdm-reservation" content="1" />
+  <link rel="canonical" href="https://diogoafonsosilva.github.io/projetos/fiat-flow-tracker.html" />
+  <meta property="og:title" content="Fiat Flow Tracker — Diogo Silva" />
+  <meta property="og:description" content="Aplicação de gestão financeira pessoal — movimentos, orçamentos, património e metas. Nasceu como ferramenta para uso próprio; a demo pública corre com dados fictícios e pode ser editada à vontade." />
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="pt_PT" />
+  <meta property="og:url" content="https://diogoafonsosilva.github.io/projetos/fiat-flow-tracker.html" />
+  <meta property="og:image" content="https://diogoafonsosilva.github.io/assets/img/fiat-flow-tracker-cover.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/project.css" />
+
+  <script src="../assets/js/guard.js"></script>
+  <script>document.documentElement.classList.add("js");</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Fiat Flow Tracker",
+    "description": "Aplicação de gestão financeira pessoal — movimentos, orçamentos, património e metas. Nasceu como ferramenta para uso próprio; a demo pública corre com dados fictícios e pode ser editada à vontade.",
+    "url": "https://diogoafonsosilva.github.io/projetos/fiat-flow-tracker.html",
+    "image": "https://diogoafonsosilva.github.io/assets/img/fiat-flow-tracker-cover.webp",
+    "author": {
+      "@type": "Person",
+      "name": "Diogo Silva",
+      "url": "https://diogoafonsosilva.github.io/"
+    },
+    "copyrightHolder": {
+      "@type": "Person",
+      "name": "Diogo Silva"
+    },
+    "copyrightYear": 2026,
+    "inLanguage": "pt-PT"
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Saltar para o conteúdo</a>
+
+  <nav id="nav" aria-label="Principal">
+    <div class="nav-wrap">
+      <a href="../index.html" class="nav-logo" aria-label="Diogo Silva — início">Diogo Silva<i>.</i></a>
+      <a href="../projects.html" class="nav-back">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M11 7H3M6 3.5L3 7l3 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Todos os projetos
+      </a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <div class="container">
+
+      <header class="case-header">
+        <p class="case-kicker mono reveal"><b>03</b> App fullstack</p>
+        <h1 class="reveal" style="--d:.05s">Fiat Flow Tracker</h1>
+        <p class="case-lead reveal" style="--d:.1s">Aplicação de gestão financeira pessoal — movimentos, orçamentos, património e metas. Nasceu como ferramenta para uso próprio; a demo pública corre com dados fictícios e pode ser editada à vontade.</p>
+        <div class="case-actions reveal" style="--d:.14s">
+          <a class="btn-primary" href="https://fiat-flow-demo.vercel.app" target="_blank" rel="noopener">
+            Abrir demo
+            <svg width="14" height="14" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn-secondary" href="#stack">Ver stack</a>
+        </div>
+        <dl class="case-meta reveal" style="--d:.18s">
+          <div><dt class="mono">Tipo</dt><dd>App fullstack</dd></div>
+          <div><dt class="mono">Papel</dt><dd>Produto, design e desenvolvimento</dd></div>
+          <div><dt class="mono">Ano</dt><dd>2026</dd></div>
+          <div><dt class="mono">Estado</dt><dd><span class="live">Online · fiat-flow-demo.vercel.app</span></dd></div>
+        </dl>
+      </header>
+
+      <figure class="case-cover reveal">
+        <img src="../assets/img/fiat-flow-tracker-cover.webp" alt="Dashboard do Fiat Flow Tracker" width="1600" height="800" fetchpriority="high" />
+      </figure>
+
+      <section class="case-block" aria-labelledby="sobre">
+        <div class="case-block-head reveal">
+          <p class="section-kicker"><b>01</b> O projeto</p>
+          <h2 id="sobre">O que <em>é</em></h2>
+        </div>
+        <div class="case-prose reveal" style="--d:.06s">
+          <p>A app mostra para onde vai o dinheiro e o que isso significa: um painel com projeção de fim de mês, alertas quando uma categoria foge do normal e comparação com o ciclo anterior.</p>
+          <p>Além do registo do dia a dia, traz calculadoras pensadas para Portugal — crédito habitação, IMT e imposto do selo, salário líquido, IUC e recibos verdes. A versão pessoal continua privada; a demo é um deploy separado, com uma persona fictícia e uma base de dados que se renova sozinha.</p>
+        </div>
+      </section>
+
+      <section class="case-block" aria-labelledby="funcionalidades">
+        <div class="case-block-head reveal">
+          <p class="section-kicker"><b>02</b> Funcionalidades</p>
+          <h2 id="funcionalidades">O que <em>faz</em></h2>
+        </div>
+        <ol class="case-features reveal" style="--d:.06s">
+          <li>Painel com insights automáticos sobre os gastos</li>
+          <li>Movimentos, orçamentos por categoria, património e metas</li>
+          <li>Calculadoras financeiras com regras portuguesas</li>
+          <li>Calendário de movimentos</li>
+          <li>Modo escuro e interface totalmente usável no telemóvel</li>
+          <li>Demo pública com dataset fictício, editável em tempo real</li>
+        </ol>
+      </section>
+
+      <section class="case-block" id="stack" aria-labelledby="stack-title">
+        <div class="case-block-head reveal">
+          <p class="section-kicker"><b>03</b> Tecnologia</p>
+          <h2 id="stack-title">A <em>stack</em></h2>
+        </div>
+        <div class="stack-grid reveal" style="--d:.06s">
+          <div class="stack-group">
+            <h3>Fullstack</h3>
+            <ul>
+              <li><strong>Next.js 14 (App Router)</strong><span>páginas e API no mesmo projeto</span></li>
+              <li><strong>TypeScript</strong><span>da base de dados ao ecrã</span></li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3>Dados</h3>
+            <ul>
+              <li><strong>Prisma</strong><span>acesso à base de dados com tipos</span></li>
+              <li><strong>SQLite</strong><span>base local, sem servidor à parte</span></li>
+              <li><strong>Zod</strong><span>validação de tudo o que entra na API</span></li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3>Interface</h3>
+            <ul>
+              <li><strong>Tailwind CSS</strong><span>estilos e modo escuro</span></li>
+              <li><strong>Recharts</strong><span>gráficos do painel</span></li>
+              <li><strong>Phosphor Icons</strong><span>ícones</span></li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3>Infra e qualidade</h3>
+            <ul>
+              <li><strong>Vercel</strong><span>alojamento da demo</span></li>
+              <li><strong>Vitest</strong><span>testes à lógica financeira</span></li>
+              <li><strong>ESLint + Prettier</strong><span>com verificação antes de cada commit</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-block" aria-labelledby="decisoes">
+        <div class="case-block-head reveal">
+          <p class="section-kicker"><b>04</b> Porquê assim</p>
+          <h2 id="decisoes">Decisões <em>técnicas</em></h2>
+        </div>
+        <div class="decisions reveal" style="--d:.06s">
+          <div class="decision"><h3>Servidor lê, cliente escreve</h3><p>As páginas vão buscar os dados diretamente no servidor. As alterações passam por uma camada de serviços e a página atualiza a seguir — sem estado duplicado no browser.</p></div>
+          <div class="decision"><h3>Lógica financeira isolada e testada</h3><p>Insights e calculadoras são funções puras, sem base de dados, cobertas por testes. É a parte onde um erro custa mais.</p></div>
+          <div class="decision"><h3>Demo separada da app real</h3><p>A versão pública é um projeto à parte, com dados inventados. Os dados verdadeiros nunca saem do computador.</p></div>
+        </div>
+      </section>
+
+      <div class="case-nav" role="navigation" aria-label="Outros projetos">
+        <a class="prev" href="taipam.html">
+          <span class="mono">← Anterior</span>
+          <strong>TAIPAM</strong>
+        </a>
+        <a class="next" href="monopolio-tuga.html">
+          <span class="mono">Seguinte →</span>
+          <strong>Monopólio Tuga</strong>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-wrap">
+      <span>© 2026 Diogo Silva — todos os direitos reservados</span>
+      <div class="footer-group">
+        <span>Porto, Portugal</span>
+        <a href="../projects.html">Todos os projetos</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/project.js"></script>
+</body>
+</html>

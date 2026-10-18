@@ -12,6 +12,9 @@ HTML / CSS / JS vanilla — sem build step, sem dependências.
 Website/
 ├── index.html              página principal (hero, projetos em destaque, competências, experiência, contacto)
 ├── projects.html           arquivo completo de projetos, com filtros por categoria
+├── projetos/               uma página por projeto (o que é, funcionalidades, stack, decisões)
+├── robots.txt / sitemap.xml
+├── .well-known/tdmrep.json reserva de direitos de text and data mining
 ├── assets/
 │   ├── css/
 │   │   ├── style.css       base partilhada (reset, nav, footer, botões, secções, reveal)
@@ -37,5 +40,6 @@ npx serve .
 ## Adicionar um novo projeto
 
 1. Colocar a imagem/logo em `assets/img/`.
-2. Copiar um `<article class="project-card">` existente em `index.html` (secção "Projetos em destaque") e em `projects.html` (grelha completa), ajustando texto, link e `data-category`.
-3. Categorias de filtro disponíveis em `projects.html`: `web`, `brand`, `ecommerce`, `lovable`, `data`.
+2. Copiar uma página de `projetos/` e adaptar o conteúdo; acrescentar o URL ao `sitemap.xml`.
+3. Copiar um `<article class="project-card">` existente em `index.html` (secção "Projetos em destaque") e em `projects.html` (grelha completa), ajustando texto, link e `data-category`.
+4. Categorias de filtro disponíveis em `projects.html`: `web`, `brand`, `ecommerce`, `lovable`, `data`.
