@@ -58,18 +58,18 @@
         </div>
       </header>
 
-      <div class="filter-bar reveal" id="filterBar" role="group" aria-label="Filtrar projetos por categoria">
+      <div class="filter-bar reveal" id="filterBar" role="group" aria-label="Filtrar projetos por objetivo">
         <button class="filter-btn active" data-filter="all" aria-pressed="true">Todos <span class="mono"></span></button>
-        <button class="filter-btn" data-filter="web" aria-pressed="false">Web <span class="mono"></span></button>
-        <button class="filter-btn" data-filter="brand" aria-pressed="false">Marca <span class="mono"></span></button>
-        <button class="filter-btn" data-filter="ecommerce" aria-pressed="false">E-commerce <span class="mono"></span></button>
-        <button class="filter-btn" data-filter="lovable" aria-pressed="false">Lovable <span class="mono"></span></button>
+        <button class="filter-btn" data-filter="client" aria-pressed="false">Clientes reais <span class="mono"></span></button>
+        <button class="filter-btn" data-filter="fullstack" aria-pressed="false">Apps fullstack <span class="mono"></span></button>
+        <button class="filter-btn" data-filter="ops" aria-pressed="false">Operações &amp; logística <span class="mono"></span></button>
+        <button class="filter-btn" data-filter="3d" aria-pressed="false">3D &amp; simulação <span class="mono"></span></button>
       </div>
 
       <div class="projects-grid" id="projectsGrid">
 
         <!-- EsDomusTech (Lovable) -->
-        <article class="project-card reveal" data-category="web brand lovable">
+        <article class="project-card reveal" data-category="client">
           <div class="project-logo-thumb framed">
             <img src="assets/img/domustech-logo.webp" alt="Logo ESDOMUSTECH" loading="lazy" width="800" height="800" />
           </div>
@@ -90,7 +90,7 @@
         </article>
 
         <!-- TAIPAM -->
-        <article class="project-card reveal" data-category="web lovable" style="--d:.06s">
+        <article class="project-card reveal" data-category="client" style="--d:.06s">
           <img src="assets/img/taipam-em-palco.webp" alt="TAIPAM — Tuna Académica do IPAM" class="project-thumb" loading="lazy" width="1000" height="1333" />
           <div class="project-body">
             <div class="project-head mono">
@@ -109,7 +109,7 @@
         </article>
 
         <!-- Fiat Flow Tracker -->
-        <article class="project-card reveal" data-category="web">
+        <article class="project-card reveal" data-category="fullstack">
           <img src="assets/img/fiat-flow-tracker-cover.webp" alt="Fiat Flow Tracker" class="project-thumb" loading="lazy" width="1600" height="800" />
           <div class="project-body">
             <div class="project-head mono">
@@ -128,7 +128,7 @@
         </article>
 
         <!-- Monopólio Tuga -->
-        <article class="project-card reveal" data-category="web" style="--d:.06s">
+        <article class="project-card reveal" data-category="3d" style="--d:.06s">
           <img src="assets/img/monopolio-tuga-cover.webp" alt="Monopólio Tuga" class="project-thumb" loading="lazy" />
           <div class="project-body">
             <div class="project-head mono">
@@ -147,7 +147,7 @@
         </article>
 
         <!-- EVPM -->
-        <article class="project-card reveal" data-category="web lovable">
+        <article class="project-card reveal" data-category="client">
           <img src="assets/img/evpm-em-palco.webp" alt="EVPM em palco" class="project-thumb" loading="lazy" width="1200" height="800" />
           <div class="project-body">
             <div class="project-head mono">
@@ -156,8 +156,8 @@
               <span class="project-badge badge-live">Live</span>
             </div>
             <h2 class="project-name">EVPM</h2>
-            <p class="project-desc">Projeto web desenvolvido com Lovable. Interface moderna com identidade visual própria e estrutura focada em comunicação clara.</p>
-            <ul class="project-tags mono"><li>Vite</li><li>React</li><li>TypeScript</li></ul>
+            <p class="project-desc">Site institucional do Ensemble Vocal Pro Musica, coro do Conservatório de Música do Porto desde 1991. Feito para três públicos — público de concertos, programadores de festivais e futuros cantores — com agenda, uma página por concerto indexada no Google e conteúdo que o próprio coro edita sem programador.</p>
+            <ul class="project-tags mono"><li>React</li><li>TypeScript</li><li>Sanity CMS</li></ul>
             <a class="project-link" href="projetos/evpm.html">
               Ver projeto
               <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -166,7 +166,7 @@
         </article>
 
         <!-- L'Essence Atelier -->
-        <article class="project-card reveal" data-category="web ecommerce lovable" style="--d:.06s">
+        <article class="project-card reveal" data-category="fullstack" style="--d:.06s">
           <img src="assets/img/lessence-atelier-cover.webp" alt="L'Essence Atelier" class="project-thumb" loading="lazy" width="1600" height="1000" />
           <div class="project-body">
             <div class="project-head mono">
@@ -185,7 +185,7 @@
         </article>
 
         <!-- Happy Hamburgers Ops -->
-        <article class="project-card reveal" data-category="web">
+        <article class="project-card reveal" data-category="ops 3d">
           <img src="assets/img/happy-hamburgers-cover.webp" alt="Happy Hamburgers Ops em 3D: fábrica, armazém e restaurante ligados por estradas, com painéis de KPIs e rastreio de lote" class="project-thumb" loading="lazy" width="1600" height="894" style="object-position: left center" />
           <div class="project-body">
             <div class="project-head mono">
@@ -204,7 +204,7 @@
         </article>
 
         <!-- Botica Alecrim Ops -->
-        <article class="project-card reveal" data-category="web">
+        <article class="project-card reveal" data-category="ops 3d">
           <img src="assets/img/botica-alecrim-cover.webp" alt="Botica Alecrim Ops: farmácia em corte com quatro pisos — produção, venda, I&amp;D e sala de decisão — e painéis de KPIs" class="project-thumb" loading="lazy" width="1600" height="894" />
           <div class="project-body">
             <div class="project-head mono">
@@ -223,7 +223,7 @@
         </article>
 
         <!-- Lousa -->
-        <article class="project-card reveal" data-category="web" style="--d:.06s">
+        <article class="project-card reveal" data-category="fullstack ops" style="--d:.06s">
           <img src="assets/img/lousa-cover.webp" alt="Lousa: layout de armazém com corredores A a D, docas, receção e rota de picking em S desenhada à mão, com post-its de notas" class="project-thumb" loading="lazy" width="1600" height="1000" />
           <div class="project-body">
             <div class="project-head mono">
@@ -242,7 +242,7 @@
         </article>
 
         <!-- Fisio em casa -->
-        <article class="project-card reveal" data-category="web">
+        <article class="project-card reveal" data-category="fullstack 3d">
           <img src="assets/img/fisio-em-casa-cover.webp" alt="Fisio em casa: avatar 3D numa máquina de remada sentada, com as fases do exercício e o registo de dor ao lado" class="project-thumb" loading="lazy" width="1600" height="1000" />
           <div class="project-body">
             <div class="project-head mono">
@@ -262,7 +262,7 @@
 
         <!-- ═══════════════════════════════════
              ADICIONAR NOVOS PROJETOS AQUI
-             data-category: "web" | "brand" | "ecommerce" | "lovable"
+             data-category: "client" | "fullstack" | "ops" | "3d" — por objetivo de vaga, vários separados por espaço
              badge-live = online | badge-local = ficheiro local
              Para projetos com foto: usar <img class="project-thumb">
              Para logos com fundo próprio: usar <div class="project-logo-thumb framed"><img></div>
@@ -273,7 +273,7 @@
 
       <div class="empty-state" id="emptyState" hidden>
         <p class="empty-title">Nada aqui — <em>ainda.</em></p>
-        <p>Ainda não há projetos nesta categoria.</p>
+        <p>Ainda não há projetos neste filtro.</p>
         <button class="btn-secondary" type="button" id="resetFilter">Ver todos os projetos</button>
       </div>
 
