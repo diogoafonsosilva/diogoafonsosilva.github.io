@@ -63,6 +63,8 @@ npx serve .
 - 2026-10-19 — Filtros do catálogo trocados de tecnologia (Web/Marca/E-commerce/Lovable) para objetivo de vaga, como um recrutador filtra: `client` Clientes reais (EsDomusTech, TAIPAM, EVPM), `fullstack` Apps fullstack (Fiat Flow, L'Essence, Lousa, Fisio), `ops` Operações & logística (Happy Hamburgers, Botica, Lousa), `3d` 3D & simulação (Monopólio, Happy Hamburgers, Botica, Fisio). Não voltar a filtrar por ferramenta (ex.: "Lovable").
 - 2026-10-21 — Link do EsDomusTech mudado de `https://esdomustech.vercel.app/` para `https://esdomustech-site.vercel.app/` (`projetos/esdomustech.html`): o nome curto pertence a uma equipa Vercel antiga, o projeto atual na conta é `esdomustech-site`. Canonical e JSON-LD de `McLarenSite/`, `SeaPortoHotel/`, `SneakerStore/` e `VendasFestival/` corrigidos de `/web-designs/<pasta>/` (404) para `/<pasta>/`.
 
+- 2026-10-25 — Capas novas de conceito (feitas pelo utilizador, 1376×768) para EsDomusTech, L'Essence Atelier, Lousa e Fisio em casa, no estilo das capas do Monopólio, Happy Hamburgers e Botica. EsDomusTech passa a ter capa própria (`esdomustech-cover.webp`) no index, no catálogo (substitui o logo `.project-logo-thumb`) e no hero/og:image da página; `esdomustech-t3-hero.webp` e `domustech-logo.webp` ficam sem uso. As outras três substituem o ficheiro com o mesmo nome. Como estas capas têm o nome do projeto no canto superior esquerdo, os `<img>` dos cartões levam `object-position: left center`, para o corte lateral não partir o nome. Fiat Flow Tracker mantém a capa atual (decisão do utilizador).
+
 ## Não fazer
 
 - Não juntar `home.css` e `projects.css` num só ficheiro — os dois definem `.project-card` de forma incompatível de propósito.
