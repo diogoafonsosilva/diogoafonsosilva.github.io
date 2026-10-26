@@ -65,6 +65,8 @@ npx serve .
 
 - 2026-10-25 — Capas novas de conceito (feitas pelo utilizador, 1376×768) para EsDomusTech, L'Essence Atelier, Lousa e Fisio em casa, no estilo das capas do Monopólio, Happy Hamburgers e Botica. EsDomusTech passa a ter capa própria (`esdomustech-cover.webp`) no index, no catálogo (substitui o logo `.project-logo-thumb`) e no hero/og:image da página; `esdomustech-t3-hero.webp` e `domustech-logo.webp` ficam sem uso. As outras três substituem o ficheiro com o mesmo nome. Como estas capas têm o nome do projeto no canto superior esquerdo, os `<img>` dos cartões levam `object-position: left center`, para o corte lateral não partir o nome. Fiat Flow Tracker mantém a capa atual (decisão do utilizador).
 
+- 2026-10-26 — Capas do Happy Hamburgers Ops e da Botica Alecrim Ops trocadas por fotos de conceito do utilizador (1376×768), no estilo das 4 capas de 25-10 (foto editorial, nome grande no canto superior esquerdo, cartões da app). A da Botica já diz "Botica Alecrim Ops" (a anterior dizia "Vitalis Pharma"). Mesmos ficheiros, com `?v=2` para furar a cache e `object-position: left center` nos cartões.
+
 ## Não fazer
 
 - Não juntar `home.css` e `projects.css` num só ficheiro — os dois definem `.project-card` de forma incompatível de propósito.
