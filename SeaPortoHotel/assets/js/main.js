@@ -35,7 +35,7 @@ const postsData = [
   {
     title: 'O Recinto Ideal',
     subtitle: 'Post 02 — Conteúdo Técnico · Abril 2026',
-    images: ['assets/img/post2.1.jpg','assets/img/post2.2.jpg','assets/img/post2.3.jpg']
+    images: ['assets/img/post2.1.webp','assets/img/post2.2.webp','assets/img/post2.3.webp']
   }
 ];
 
