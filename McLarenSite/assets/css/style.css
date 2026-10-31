@@ -463,6 +463,7 @@ footer { background:#080809; padding:52px var(--side); border-top:1px solid var(
 .footer-bottom { background:#080809; padding:14px var(--side); border-top:1px solid var(--border); }
 .footer-bottom-inner { max-width:var(--max-w); margin:0 auto; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; }
 .footer-bottom p { font-size:11px; color:var(--muted); }
+.footer-bottom .footer-disclaimer { max-width:70ch; line-height:1.5; }
 .footer-bottom a { font-size:11px; color:var(--orange); text-decoration:none; }
 
 /* ══════════════════════════════════════
