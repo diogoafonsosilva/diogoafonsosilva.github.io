@@ -1,29 +1,37 @@
 /* ── Custom cursor ── */
-const cursor = document.getElementById('cursor');
-const ring   = document.getElementById('cursorRing');
-let mx=0, my=0, rx=0, ry=0;
-document.addEventListener('mousemove', e => {
-  mx = e.clientX; my = e.clientY;
-  cursor.style.left = mx + 'px';
-  cursor.style.top  = my + 'px';
-});
-(function animRing() {
-  rx += (mx - rx) * 0.12;
-  ry += (my - ry) * 0.12;
-  ring.style.left = rx + 'px';
-  ring.style.top  = ry + 'px';
-  requestAnimationFrame(animRing);
-})();
-document.querySelectorAll('a, button, .model-card, .gallery-item').forEach(el => {
-  el.addEventListener('mouseenter', () => {
-    ring.style.width  = '50px'; ring.style.height = '50px';
-    ring.style.borderColor = 'rgba(255,128,0,.8)';
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+// Só com rato/trackpad (o CSS esconde o cursor e repõe o nativo nos restantes casos)
+if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+  const cursor = document.getElementById('cursor');
+  const ring   = document.getElementById('cursorRing');
+  let mx=0, my=0, rx=0, ry=0;
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    cursor.style.left = mx + 'px';
+    cursor.style.top  = my + 'px';
+    if (reduceMotion) { ring.style.left = mx + 'px'; ring.style.top = my + 'px'; }
   });
-  el.addEventListener('mouseleave', () => {
-    ring.style.width  = '32px'; ring.style.height = '32px';
-    ring.style.borderColor = 'rgba(255,128,0,.5)';
+  // Sem prefers-reduced-motion o anel segue com atraso suave; com ele, segue sem animação
+  if (!reduceMotion) {
+    (function animRing() {
+      rx += (mx - rx) * 0.12;
+      ry += (my - ry) * 0.12;
+      ring.style.left = rx + 'px';
+      ring.style.top  = ry + 'px';
+      requestAnimationFrame(animRing);
+    })();
+  }
+  document.querySelectorAll('a, button, .model-card, .gallery-item').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      ring.style.width  = '50px'; ring.style.height = '50px';
+      ring.style.borderColor = 'rgba(255,128,0,.8)';
+    });
+    el.addEventListener('mouseleave', () => {
+      ring.style.width  = '32px'; ring.style.height = '32px';
+      ring.style.borderColor = 'rgba(255,128,0,.5)';
+    });
   });
-});
+}
 
 /* ── Expandable model cards ── */
 const cards = document.querySelectorAll('.model-card');
@@ -57,4 +65,6 @@ function closeNav() {
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.1 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+document.querySelectorAll('.reveal').forEach(el => {
+  if (reduceMotion) el.classList.add('visible'); else observer.observe(el);
+});
