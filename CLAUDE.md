@@ -67,6 +67,8 @@ npx serve .
 
 - 2026-10-26 — Capas do Happy Hamburgers Ops e da Botica Alecrim Ops trocadas por fotos de conceito do utilizador (1376×768), no estilo das 4 capas de 25-10 (foto editorial, nome grande no canto superior esquerdo, cartões da app). A da Botica já diz "Botica Alecrim Ops" (a anterior dizia "Vitalis Pharma"). Mesmos ficheiros, com `?v=2` para furar a cache e `object-position: left center` nos cartões.
 
+- 2026-10-31 — Auditoria aplicada. Demos , , , :  (VendasFestival mantém index), aviso de projeto académico/sem afiliação, / +  em todas, imagens em WebP (≤200 KB) com width/height. Fontes Geist, Geist Mono e Instrument Serif agora self-hosted em  (latin, ,  no topo de ); as demos continuam com as fontes Google próprias. Cada página de projeto tem  1200×630 em  (gerado a partir da capa, recorte alinhado ao canto superior esquerdo). Removidas 18 imagens sem uso de  (restam no histórico git). VendasFestival: matemática em centilitros inteiros, sensibilidade partilha o modelo de , testes em  (, dentro da pasta).
+
 ## Não fazer
 
 - Não juntar `home.css` e `projects.css` num só ficheiro — os dois definem `.project-card` de forma incompatível de propósito.

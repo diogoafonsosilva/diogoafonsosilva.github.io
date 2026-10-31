@@ -23,7 +23,8 @@ Website/
 │   ├── js/
 │   │   ├── main.js         scroll do nav + animação reveal (index.html)
 │   │   └── projects.js     scroll, reveal e filtros (projects.html)
-│   └── img/                fotos, logos e capas de projetos
+│   ├── fonts/              Geist, Geist Mono e Instrument Serif (woff2, self-hosted)
+│   └── img/                fotos, logos e capas de projetos (og/ = imagens 1200×630 para partilha)
 ├── .editorconfig
 ├── .gitignore
 └── README.md
