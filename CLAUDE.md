@@ -69,6 +69,8 @@ npx serve .
 
 - 2026-10-31 — Auditoria aplicada. Demos `McLarenSite/`, `SneakerStore/`, `SeaPortoHotel/`, `VendasFestival/`: `noindex` (VendasFestival mantém index), aviso de projeto académico/sem afiliação, `noai`/`tdm-reservation` + `../assets/js/guard.js` em todas, imagens em WebP (≤200 KB) com width/height. Fontes Geist, Geist Mono e Instrument Serif agora self-hosted em `assets/fonts/` (latin, `font-display: swap`, `@font-face` no topo de `style.css`); as demos continuam com as fontes Google próprias. Cada página de projeto tem `og:image` 1200×630 em `assets/img/og/<slug>.jpg` (gerado a partir da capa, recorte alinhado ao canto superior esquerdo). Removidas 18 imagens sem uso de `assets/img/` (restam no histórico git). VendasFestival: matemática em centilitros inteiros, sensibilidade partilha o modelo de `calc()`, testes em `VendasFestival/tests` (`node --test tests/breakeven.test.js`, dentro da pasta).
 
+- 2026-10-31 — `McLarenSite/` e `SneakerStore/` retirados do site (pedido do utilizador): usavam marcas e fotos reais de terceiros. Só voltam depois de refeitos com identidade e imagens próprias. A versão anterior fica no histórico git (commit antes desta remoção); os originais do IEFP estão em `MeuSite/McLarenSite` e `MeuSite/SneakerStore`.
+
 ## Não fazer
 
 - Não juntar `home.css` e `projects.css` num só ficheiro — os dois definem `.project-card` de forma incompatível de propósito.
