@@ -76,3 +76,4 @@ npx serve .
 ## Não fazer
 
 - Não juntar `home.css` e `projects.css` num só ficheiro — os dois definem `.project-card` de forma incompatível de propósito.
+- 2026-11-04 — `VendasFestival/` removido: fica fora do portfólio, tal como o NextRole. O EsDomusTech fica, a apontar para `esdomustech-site.vercel.app` e sem assinatura no site: mostra a versão feita pelo Diogo, porque o site da empresa em `.com` pode mudar.
