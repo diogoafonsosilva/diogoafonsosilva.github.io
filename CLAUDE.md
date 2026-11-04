@@ -71,6 +71,8 @@ npx serve .
 
 - 2026-10-31 — `McLarenSite/` e `SneakerStore/` retirados do site (pedido do utilizador): usavam marcas e fotos reais de terceiros. Só voltam depois de refeitos com identidade e imagens próprias. A versão anterior fica no histórico git (commit antes desta remoção); os originais do IEFP estão em `MeuSite/McLarenSite` e `MeuSite/SneakerStore`.
 
+- 2026-11-04 — McLaren de volta ao portfólio (pedido do utilizador; reverte a retirada de 31-10). O site já não é o da altura: fotos livres do Commons com crédito, faixa de material de estudo em todas as páginas e `noindex`. Só cartão + página própria, com link para `https://mclaren-portfolio.vercel.app`; o código continua em `MeuSite/McLarenSite` e não volta para dentro deste repo. Index 09 (`span-12 is-wide`), catálogo 11 (`3d`). Exceção à regra geral: `projetos/mclaren.html` leva `noindex` e fica fora do `sitemap.xml`, para o nome da marca não aparecer na pesquisa a partir daqui. Capa = imagem de conceito do utilizador (`assets/img/mclaren-cover.webp`, 1376×768), sem nome no canto, por isso `object-position: right center`. Stat "Projetos online" e `visibleCount` passam a 11.
+
 ## Não fazer
 
 - Não juntar `home.css` e `projects.css` num só ficheiro — os dois definem `.project-card` de forma incompatível de propósito.
